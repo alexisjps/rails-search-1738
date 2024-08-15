@@ -10,6 +10,8 @@
 
 require 'open-uri'
 
+Director.destroy_all
+
 url = "https://gist.githubusercontent.com/ssaunier/be9a933b64116e2422176aab7528473e/raw/d1e1b06e25616771fddf44bf066765f518b0655d/imdb.yml"
 sample = YAML.load(URI.parse(url).read)
 
